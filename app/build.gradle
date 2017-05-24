@@ -4,6 +4,7 @@ apply plugin: 'com.noveogroup.android.check'
 
 repositories {
     maven { url "https://jitpack.io" }
+    maven { url "https://clojars.org/repo/" }
 }
 
 android {
@@ -50,16 +51,38 @@ check {
 }
 
 dependencies {
+    // Local libs
     compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Testing with JUnit
     testCompile 'junit:junit:4.12'
+
+    // Android support libraries
     compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:gridlayout-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    // Butterknife for easy view binding
     compile 'com.jakewharton:butterknife:8.5.1'
     apt 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    // Guava for network & I/O
     compile 'com.google.guava:guava:20.0'
+
+    // Yahoo! Finance library (deprecated)
     compile 'com.yahoofinance-api:YahooFinanceAPI:3.6.1'
+
+    // Timber log
     compile 'com.jakewharton.timber:timber:4.5.1'
+
+    // Charting and CSV decoder
     compile 'net.sf.opencsv:opencsv:2.3'
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+
+    //Icepick for savingInstanceState
+    compile 'frankiesardo:icepick:3.2.0'
+    provided 'frankiesardo:icepick-processor:3.2.0'
 }

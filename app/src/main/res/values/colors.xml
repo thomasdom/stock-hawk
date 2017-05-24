@@ -8,4 +8,11 @@
     <color name="material_red_700">#D50000</color>
     <color name="material_green_700">#00C853</color>
 
+    <!-- Custom colors -->
+    <color name="stock_chart_line_color">#FFFFFF</color>
+
+    <color name="darkest_grey">#2B2B2B</color>
+    <color name="dark_grey">#3C3F41</color>
+    <color name="dark_grey_with_opacity">#DE3C3F41</color>
+
 </resources>

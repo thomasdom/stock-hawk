@@ -1,16 +1,16 @@
-<resources>
-    <string name="app_name">Stock Hawk</string>
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Stock Hawk</string>
 
     <string name="pref_stocks_initialized_key" translatable="false">initialized</string>
 
-    <string name="pref_stocks_key">stocks</string>
+    <string name="pref_stocks_key" translatable="false">stocks</string>
 
 
-    <string name="pref_display_mode_key">displayMode</string>
-    <string name="pref_display_mode_default">@string/pref_display_mode_percentage_key</string>
+    <string name="pref_display_mode_key" translatable="false">displayMode</string>
+    <string name="pref_display_mode_default" translatable="false">@string/pref_display_mode_percentage_key</string>
 
-    <string name="pref_display_mode_absolute_key">absolute</string>
-    <string name="pref_display_mode_percentage_key">percentage</string>
+    <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
+    <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
 
     <string name="default_stocks_yahoo">YHOO</string>
     <string name="default_stocks_apple">AAPL</string>
@@ -18,7 +18,7 @@
     <string name="default_stocks_facebook">FB</string>
 
 
-    <string name="action_change_units">@string/pref_display_mode_key</string>
+    <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
 
 
     <string name="dialog_title">Add Stock</string>
@@ -32,4 +32,28 @@
     <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
     <string name="toast_no_connectivity">Will refresh when network available.</string>
 
+    <!--Ex: - $123 on 1 Jan 2017-->
+    <string name="marker_text">%s <i>on</i> <xliff:g example="1 Jan 2017" id="date">%s</xliff:g></string>
+
+    <!-- Chart fragment titles -->
+    <string name="days_fragment_title">Daily</string>
+    <string name="weeks_fragment_title">Weekly</string>
+    <string name="months_fragment_title">Monthly</string>
+
+    <!-- Chart fragment data type -->
+    <string name="FRAGMENT_DATA_TYPE_KEY" translatable="false">fragment_data_type</string>
+    <string name="MONTHLY" translatable="false">monthly</string>
+    <string name="WEEKLY" translatable="false">weekly</string>
+    <string name="DAILY" translatable="false">daily</string>
+
+    <!-- Content descriptions for accessibility purposes -->
+    <string name="add_new_stock_cd">Add new stock</string>
+    <string name="detail_activity_cd">Stock details of %s</string>
+    <string name="day_lowest_cd">Today\'s lowest stock value %s</string>
+    <string name="day_highest_cd">Today\'s highest stock value %s</string>
+    <string name="stock_price_cd">Stock price %s</string>
+    <string name="display_mode_cd">Toggle display mode between absolute and percentage values</string>
+    <string name="display_mode_change_cd">Display mode changed to %s</string>
+    <string name="stock_increment_cd">Stock value increased by %s</string>
+    <string name="stock_decrement_cd">Stock value decreased by %s</string>
 </resources>
