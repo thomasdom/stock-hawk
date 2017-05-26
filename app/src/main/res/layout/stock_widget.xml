@@ -50,6 +50,6 @@
             android:layout_height="match_parent"
             android:fontFamily="sans-serif-condensed"
             android:gravity="center"
-            android:text="@string/empty_stock_list"/>
+            android:text="@string/stock_widget_empty_list"/>
     </LinearLayout>
 </LinearLayout>

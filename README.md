@@ -1,13 +1,47 @@
-# Stock Hawk
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d8e2694d1bd04633a19088f42ec5ae78)](https://www.codacy.com/app/thomasdom/stock-hawk?utm_source=github.com&utm_medium=referral&utm_content=thomasdom/stock-hawk&utm_campaign=badger) 
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d8e2694d1bd04633a19088f42ec5ae78)](https://www.codacy.com/app/thomasdom/stock-hawk?utm_source=github.com&utm_medium=referral&utm_content=thomasdom/stock-hawk&utm_campaign=badger)
+Stock Hawk
+==================
 
-This is the starter code for project 3 in Udacity's [Android Developer Nanodegree](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801). 
+A production-ready Android app that let user check stocks market, with data from Yahoo Finance API.
+This is Project 3 in Udacity's [Associate Android Developer Fast Track Program](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801).
 
-Check out Udacity's [Advanced Android App Development](https://www.udacity.com/course/advanced-android-app-development--ud855) course to get the skills you'll need to complete this project!
+**Features:**
 
-If you're a Nanodegree student check your work againt the project [rubric](https://review.udacity.com/#!/rubrics/140/view), then click [here](https://classroom.udacity.com/nanodegrees/nd801/parts/8011345406/project) to submit your project.
+- Discover stock quotes with recent changes
+- User can choose his favorite change format: **percentage** or **absolute**
+- Each stock quote on the main screen is clickable and leads to a new screen which graphs the stock's value over time
+- User can add a Stock Hawk widget on launch screen, displaying his favorite stock quotes in a simple and efficient way
+- Fool-proof error handling
+- Offline work
 
-# Contrubuting
+Screenshots
+-----------
+
+<img width="45%" src=".github/main.png" />
+<img width="45%" src=".github/detail.png" />
+<img width="45%" src=".github/dialog.png" />
+<img width="45%" src=".github/widget.png" />
+
+Developer setup
+---------------
+
+### Requirements
+
+- Java 7 or 8
+- Latest version of Android SDK and Android Build Tools
+
+### Building
+
+You can build the app with Android Studio or with `./gradlew assembleDebug` command.
+
+
+### Contrubuting
 
 Pull requests gratefully accepted.
+
+License
+-------
+
+This project is released under The Unlicense, as shown in the [LICENSE][1] file.
+[1]: LICENSE

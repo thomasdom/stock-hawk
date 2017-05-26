@@ -11,8 +11,24 @@ import android.widget.RemoteViewsService;
 import com.udacity.stockhawk.R;
 import com.udacity.stockhawk.data.Contract;
 
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class StockWidgetRemoteViewsService extends RemoteViewsService
 {
+    private final DecimalFormat dollarFormat;
+    private final DecimalFormat percentageFormat;
+
+    public StockWidgetRemoteViewsService()
+    {
+        dollarFormat = (DecimalFormat) NumberFormat.getCurrencyInstance(Locale.US);
+        percentageFormat = (DecimalFormat) NumberFormat.getPercentInstance(Locale.getDefault());
+        percentageFormat.setMaximumFractionDigits(2);
+        percentageFormat.setMinimumFractionDigits(2);
+        percentageFormat.setPositivePrefix("+");
+    }
+
     @Override
     public RemoteViewsFactory onGetViewFactory(Intent intent)
     {
@@ -75,12 +91,18 @@ public class StockWidgetRemoteViewsService extends RemoteViewsService
 
                 // Fetch data
                 String symbol = data.getString(Contract.Quote.POSITION_SYMBOL);
-                String price = data.getString(Contract.Quote.POSITION_PRICE);
-                String percentageChange = data.getString(Contract.Quote.POSITION_PERCENTAGE_CHANGE);
+                float price = data.getFloat(Contract.Quote.POSITION_PRICE);
+                float percentageChange = data.getFloat(Contract.Quote.POSITION_PERCENTAGE_CHANGE);
+                float rawAbsoluteChange = data.getFloat(Contract.Quote.POSITION_ABSOLUTE_CHANGE);
+
+                if (rawAbsoluteChange > 0)
+                    views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_green);
+                else
+                    views.setInt(R.id.change, "setBackgroundResource", R.drawable.percent_change_pill_red);
 
                 views.setTextViewText(R.id.symbol, symbol);
-                views.setTextViewText(R.id.price, price);
-                views.setTextViewText(R.id.change, percentageChange);
+                views.setTextViewText(R.id.price, dollarFormat.format(price));
+                views.setTextViewText(R.id.change, percentageFormat.format(percentageChange / 100));
 
                 final Intent fillInIntent = new Intent();
                 Uri stockUri = Contract.Quote.makeUriForStock(symbol);

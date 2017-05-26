@@ -12,10 +12,10 @@
     <string name="pref_display_mode_absolute_key" translatable="false">absolute</string>
     <string name="pref_display_mode_percentage_key" translatable="false">percentage</string>
 
-    <string name="default_stocks_yahoo">YHOO</string>
-    <string name="default_stocks_apple">AAPL</string>
-    <string name="default_stocks_microsoft">MSFT</string>
-    <string name="default_stocks_facebook">FB</string>
+    <string name="default_stocks_yahoo" translatable="false">YHOO</string>
+    <string name="default_stocks_apple" translatable="false">AAPL</string>
+    <string name="default_stocks_microsoft" translatable="false">MSFT</string>
+    <string name="default_stocks_facebook" translatable="false">FB</string>
 
 
     <string name="action_change_units" translatable="false">@string/pref_display_mode_key</string>
@@ -30,7 +30,12 @@
     <string name="error_no_stocks">No stocks added! Hit the floating action button to add one.</string>
 
     <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
+    <string name="toast_stock_invalid_symbol">Stock \"%s\" does not exist. Please try again with another symbol.</string>
     <string name="toast_no_connectivity">Will refresh when network available.</string>
+
+    <string name="stock_details_activity_title">Stock Details</string>
+
+    <string name="stock_widget_empty_list">No stocks added in Stock Hawk</string>
 
     <!--Ex: - $123 on 1 Jan 2017-->
     <string name="marker_text">%s <i>on</i> <xliff:g example="1 Jan 2017" id="date">%s</xliff:g></string>
@@ -56,6 +61,4 @@
     <string name="display_mode_change_cd">Display mode changed to %s</string>
     <string name="stock_increment_cd">Stock value increased by %s</string>
     <string name="stock_decrement_cd">Stock value decreased by %s</string>
-    <string name="stock_details_activity_title">Stock Details</string>
-    <string name="empty_stock_list">No stocks added in Stock Hawk</string>
 </resources>
