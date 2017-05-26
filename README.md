@@ -1,5 +1,7 @@
 # Stock Hawk
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d8e2694d1bd04633a19088f42ec5ae78)](https://www.codacy.com/app/thomasdom/stock-hawk?utm_source=github.com&utm_medium=referral&utm_content=thomasdom/stock-hawk&utm_campaign=badger)
+
 This is the starter code for project 3 in Udacity's [Android Developer Nanodegree](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801). 
 
 Check out Udacity's [Advanced Android App Development](https://www.udacity.com/course/advanced-android-app-development--ud855) course to get the skills you'll need to complete this project!
