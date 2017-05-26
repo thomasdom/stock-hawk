@@ -26,7 +26,6 @@ import timber.log.Timber;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 import yahoofinance.histquotes.HistoricalQuote;
-import yahoofinance.histquotes.Interval;
 import yahoofinance.quotes.stock.StockQuote;
 
 public final class QuoteSyncJob {
@@ -46,7 +45,7 @@ public final class QuoteSyncJob {
         Timber.d("Running sync job");
 
         Calendar from = Calendar.getInstance();
-        Calendar to = Calendar.getInstance();
+        // Calendar to = Calendar.getInstance();
         from.add(Calendar.YEAR, -YEARS_OF_HISTORY);
 
         try {

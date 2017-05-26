@@ -22,7 +22,6 @@ import com.udacity.stockhawk.data.Contract;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
@@ -108,7 +107,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
             String stockName = data.getString(Contract.Quote.POSITION_SYMBOL);
             Float stockPrice = data.getFloat(Contract.Quote.POSITION_PRICE);
             Float absolutionChange = data.getFloat(Contract.Quote.POSITION_ABSOLUTE_CHANGE);
-            Float percentageChange = data.getFloat(Contract.Quote.POSITION_PERCENTAGE_CHANGE);
+            // Float percentageChange = data.getFloat(Contract.Quote.POSITION_PERCENTAGE_CHANGE);
 
             getWindow().getDecorView().setContentDescription(
                     String.format(getString(R.string.detail_activity_cd), stockName));

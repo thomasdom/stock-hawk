@@ -16,7 +16,6 @@ import java.util.logging.Level;
 import yahoofinance.Utils;
 import yahoofinance.YahooFinance;
 import yahoofinance.histquotes.HistoricalQuote;
-import yahoofinance.quotes.stock.StockQuote;
 
 public class MockUtils {
 
