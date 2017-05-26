@@ -56,7 +56,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
         Icepick.restoreInstanceState(this, savedInstanceState);
         setContentView(R.layout.activity_detail);
         ButterKnife.bind(this);
-        getSupportActionBar().setTitle("");
+        getSupportActionBar().setTitle(getString(R.string.stock_details_activity_title));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         stockUri = getIntent().getData();
