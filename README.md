@@ -1,8 +1,4 @@
-# Stock Hawk 
-
-# Contrubuting
-
-Pull requests gratefully accepted.
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d8e2694d1bd04633a19088f42ec5ae78)](https://www.codacy.com/app/thomasdom/stock-hawk?utm_source=github.com&utm_medium=referral&utm_content=thomasdom/stock-hawk&utm_campaign=badger) 
 
 Stock Hawk
 ==================
@@ -38,6 +34,11 @@ Developer setup
 ### Building
 
 You can build the app with Android Studio or with `./gradlew assembleDebug` command.
+
+
+### Contrubuting
+
+Pull requests gratefully accepted.
 
 License
 -------
