@@ -6,7 +6,8 @@ Stock Hawk
 A production-ready Android app that let user check stocks market, with data from Yahoo Finance API.
 This is Project 3 in Udacity's [Associate Android Developer Fast Track Program](https://www.udacity.com/course/android-developer-nanodegree-by-google--nd801).
 
-**Features:**
+Features
+--------
 
 - Discover stock quotes with recent changes
 - User can choose his favorite change format: **percentage** or **absolute**
@@ -18,10 +19,8 @@ This is Project 3 in Udacity's [Associate Android Developer Fast Track Program](
 Screenshots
 -----------
 
-<img width="45%" src=".github/main.png" />
-<img width="45%" src=".github/detail.png" />
-<img width="45%" src=".github/dialog.png" />
-<img width="45%" src=".github/widget.png" />
+<img width="45%" src=".github/main.png" /> <img width="45%" src=".github/detail.png" />
+<img width="45%" src=".github/dialog.png" /> <img width="45%" src=".github/widget.png" />
 
 Developer setup
 ---------------
@@ -36,7 +35,8 @@ Developer setup
 You can build the app with Android Studio or with `./gradlew assembleDebug` command.
 
 
-### Contrubuting
+Contrubuting
+------------
 
 Pull requests gratefully accepted.
 
@@ -44,4 +44,5 @@ License
 -------
 
 This project is released under The Unlicense, as shown in the [LICENSE][1] file.
+
 [1]: LICENSE
